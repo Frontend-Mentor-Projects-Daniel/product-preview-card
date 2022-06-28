@@ -13,6 +13,7 @@
     />
 
     <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/general.css" />
     <link rel="stylesheet" href="./css/index.css" />
 
     <title>Frontend Mentor | Product preview card component</title>
@@ -29,17 +30,50 @@
     </style>
   </head>
   <body>
-    <!-- Preview
+    <main>
+      <section class="section">
+        <!-- PRODUCT COMPONENT -->
+        <div class="product-card">
+          <!-- PRODUCT PREVIEW IMAGE -->
+          <picture class="product-card__image">
+            <source
+              srcset="./images/image-product-mobile.jpg"
+              media="(min-width: 375px)"
+            />
+            <source
+              srcset="./images/image-product-desktop.jpg"
+              media="(min-width: 1440px)"
+            />
+            <img
+              src="./images/image-product-mobile.jpg"
+              alt="A preview image of the product, Gabrielle Essence Eau De Parfum"
+            />
+          </picture>
 
-  Gabrielle Essence Eau De Parfum
+          <!-- PRODUCT TEXT CONTENT -->
+          <div class="product-card__text-content">
+            <h2>perfume</h2>
+            <h3>Gabrielle Essence Eau De Parfum</h3>
+            <p>
+              A floral, solar and voluptuous interpretation composed by Olivier
+              Polge, Perfumer-Creator for the House of CHANEL.
+            </p>
+          </div>
 
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
+          <!-- PRICE -->
+          <div class="product-card__price">
+            <span class="product-card__current-price">$149.99</span>
+            <span class="product-card__old-price">$169.99</span>
+          </div>
 
-  $149.99
-  $169.99
-
-  Add to Cart -->
+          <!-- ADD TO CART BUTTON -->
+          <button class="btn--add-to-cart">
+            <img src="./images/icon-cart.svg" role="image" alt="" />
+            Add to Cart
+          </button>
+        </div>
+      </section>
+    </main>
 
     <div class="attribution">
       Challenge by
