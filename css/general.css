@@ -21,3 +21,7 @@ body {
 p {
   font-size: 14px;
 }
+
+.container {
+  padding: 0 15px;
+}

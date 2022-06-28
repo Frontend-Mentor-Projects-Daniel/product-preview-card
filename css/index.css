@@ -1,0 +1,25 @@
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+  width: 100vw;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 22.5rem;
+}
+
+.product-card__image {
+  background-image: url('../images/image-product-mobile.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  height: 22.5rem;
+  width: 22.5rem;
+}
