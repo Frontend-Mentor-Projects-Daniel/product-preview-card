@@ -1,3 +1,4 @@
+/* SECTION */
 .section {
   display: flex;
   align-items: center;
@@ -7,19 +8,110 @@
   width: 100vw;
 }
 
+/* CARD */
 .product-card {
   display: flex;
   flex-direction: column;
 
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   max-width: 22.5rem;
 }
 
+/* IMAGE */
 .product-card__image {
   background-image: url('../images/image-product-mobile.jpg');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 
-  height: 22.5rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 15.5rem;
   width: 22.5rem;
+}
+
+/* BOTTOM HALF OF CARD */
+.product-card__bottom-half {
+  padding: 15px;
+}
+
+/* TEXT CONTENT */
+.product-card__text-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.product-card__tag {
+  color: var(--dark-grayish-blue);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 6px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.product-card__title {
+  font-family: 'Fraunces', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 14px;
+  margin-bottom: 0;
+}
+
+.product-card__summary {
+  color: var(--dark-grayish-blue);
+  line-height: 1.5625rem;
+}
+
+/* PRICE */
+.product-card__price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  margin-bottom: 1rem;
+}
+
+.product-card__current-price {
+  color: var(--dark-cyan);
+  font-family: 'Fraunces', serif;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.product-card__old-price {
+  color: var(--dark-grayish-blue);
+  font-size: 14px;
+  text-decoration: line-through;
+}
+
+/* BUTTON */
+.btn--add-to-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  background-color: var(--dark-cyan);
+  border-radius: 10px;
+  color: var(--white);
+  font-weight: 700;
+  padding: 1rem 2rem;
+  width: 100%;
+}
+
+.btn--add-to-cart:hover {
+  background-color: hsl(158, 36%, 27%);
+}
+
+/* MEDIA QUERIES */
+
+/* For Tablet */
+@media only screen and (min-width: 768px) {
+}
+
+/* For Desktop */
+@media only screen and (min-width: 1440px) {
 }
