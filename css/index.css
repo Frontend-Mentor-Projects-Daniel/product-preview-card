@@ -13,6 +13,7 @@
   display: flex;
   flex-direction: column;
 
+  background-color: var(--white);
   border-radius: 10px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   max-width: 22.5rem;
@@ -33,7 +34,7 @@
 
 /* BOTTOM HALF OF CARD */
 .product-card__bottom-half {
-  padding: 15px;
+  padding: 19px;
 }
 
 /* TEXT CONTENT */
@@ -108,10 +109,24 @@
 
 /* MEDIA QUERIES */
 
-/* For Tablet */
+/* For Tablet and Desktop */
 @media only screen and (min-width: 768px) {
-}
+  .product-card {
+    flex-direction: row;
 
-/* For Desktop */
-@media only screen and (min-width: 1440px) {
+    max-width: 39rem;
+  }
+
+  .product-card__image {
+    background-image: url(../images/image-product-desktop.jpg);
+
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    height: auto;
+    width: 56rem;
+  }
+
+  .product-card__bottom-half {
+    padding: 25px;
+  }
 }
